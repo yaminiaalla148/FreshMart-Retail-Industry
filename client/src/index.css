@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Fresh, organic, trustworthy palette */
+  --font-display: 'Outfit', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+
+  /* Emerald Green Primary */
+  --primary: 158 64% 52%; /* #34D399 equivalent - Vibrant Minty Green */
+  --primary-foreground: 160 84% 12%; /* Dark green text on primary */
+  
+  /* Deep Forest Secondary */
+  --secondary: 165 37% 24%; /* Dark Slate Green */
+  --secondary-foreground: 150 20% 96%;
+
+  /* Clean Backgrounds */
+  --background: 140 20% 98%; /* Very subtle mint tint white */
+  --foreground: 165 40% 15%; /* Dark green-grey for text */
+  
+  --card: 0 0% 100%;
+  --card-foreground: 165 40% 15%;
+  
+  --popover: 0 0% 100%;
+  --popover-foreground: 165 40% 15%;
+  
+  --muted: 150 10% 94%;
+  --muted-foreground: 160 10% 45%;
+  
+  --accent: 38 92% 50%; /* Golden Orange for offers/actions */
+  --accent-foreground: 0 0% 100%;
+  
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 98%;
+
+  --border: 150 15% 90%;
+  --input: 150 15% 90%;
+  --ring: 158 64% 52%;
+  
+  --radius: 1rem; /* Rounded corners for friendly feel */
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-body);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    @apply tracking-tight font-bold text-secondary;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .glass-card {
+    @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-xl;
+  }
+  
+  .premium-shadow {
+    box-shadow: 0 10px 40px -10px rgba(0,0,0,0.08);
+  }
+  
+  .grocery-gradient {
+    @apply bg-gradient-to-br from-green-50 to-emerald-100;
+  }
+}
+
+/* Custom Scrollbar for sleek look */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-muted-foreground/20 rounded-full;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-muted-foreground/40;
+}

@@ -1,0 +1,301 @@
+🔷 BUILD A SMART GROCERY RETAIL STORE APPLICATION
+
+Build a full-stack Smart Retail Grocery Application using React + TypeScript (frontend) and Node.js + TypeScript (backend).
+This is a physical grocery store digital assistant, not an electronics store.
+
+🧩 TECH STACK
+Frontend
+
+React + TypeScript
+
+Vite
+
+Tailwind CSS
+
+shadcn/ui
+
+TanStack React Query
+
+Wouter (routing)
+
+Recharts (analytics charts)
+
+Lucide-react icons
+
+Framer Motion animations
+
+Backend
+
+Node.js + Express + TypeScript
+
+SQLite (or in-memory DB)
+
+REST APIs
+
+Server-Sent Events (SSE) for AI chatbot streaming
+
+🏬 STORE STRUCTURE (IMPORTANT)
+
+The store contains 1000+ grocery items, organized as:
+
+Store
+ └── Floor (Ground Floor, 1st Floor, 2nd Floor, etc.)
+     └── Rack (Rack 1, Rack 2, Rack 3, Rack 4)
+         └── Items (minimum 10 items per rack)
+
+🧺 ITEM CATEGORIES (NO ELECTRONICS)
+
+Include real grocery & daily-use items only, such as:
+
+Vegetables (tomato, onion, potato, carrot, etc.)
+
+Fruits (apple, banana, orange, mango, grapes)
+
+Masalas & spices (chilli powder, turmeric, garam masala)
+
+Snacks (Kurkure, Lays, biscuits)
+
+Chocolates (Dairy Milk, KitKat, Munch)
+
+Soft drinks (Sprite, Coke, Pepsi — correct images only)
+
+Milk products (milk, curd, butter, cheese)
+
+Rice & grains (basmati, sona masoori, wheat)
+
+Oils (sunflower, groundnut, coconut)
+
+Soaps & shampoos
+
+Face creams & cosmetics
+
+Baby care products
+
+Stationery items
+
+Non-veg (egg, chicken, meat)
+
+Cleaning products
+
+🚫 DO NOT ADD ELECTRONIC GADGETS
+
+🖼️ ITEM IMAGES (VERY IMPORTANT)
+
+Every item must have a correct image
+
+Sprite must show Sprite image, not Coke
+
+Coke must show Coke image
+
+Vegetables → real vegetable images
+
+Fruits → real fruit images
+
+Use realistic placeholder images mapped correctly to item names
+
+Images must appear in:
+
+Customer portal
+
+Manager analytics
+
+Sold items list
+
+Least-selling items list
+
+👤 CUSTOMER PORTAL FLOW
+1️⃣ Login Page
+
+Customer can:
+
+Login using phone number
+
+Login using email
+
+Skip login
+
+After login:
+
+Customer sees AI chatbot immediately
+
+Sees store floors
+
+2️⃣ Floor → Rack → Items
+
+Example:
+
+Ground Floor
+
+Rack 1 → 10+ items
+
+Rack 2 → 10+ items
+
+Rack 3 → 10+ items
+
+Rack 4 → 10+ items
+
+Each item card shows:
+
+Image
+
+Name
+
+Price
+
+Discount (if available)
+
+Final discounted price
+
+3️⃣ Search & Browse
+
+Search items by name or category
+
+Filter by discount
+
+Works across all floors and racks
+
+🤖 AI CHATBOT (CORE FEATURE)
+
+AI bot is always visible in customer portal.
+
+AI can answer:
+
+“Where is sugar?”
+→ Ground Floor → Rack 2
+
+“What discounts are running?”
+
+“Where is chicken?”
+
+“How much does basmati rice cost?”
+
+“Is there discount on shampoo?”
+
+🍰 INGREDIENT ASSISTANCE (VERY IMPORTANT)
+
+If customer asks:
+
+“I want to prepare cake”
+
+AI responds with:
+
+List of required ingredients (flour, eggs, sugar, milk, butter, baking powder)
+
+Each ingredient:
+
+Price
+
+Discount (if any)
+
+Total cost calculation
+
+Same for:
+
+Biryani
+
+Curry
+
+Snacks
+
+Juice
+
+Baby food
+
+📊 MANAGER PORTAL
+🛠️ ITEM MANAGEMENT
+
+Manager can:
+
+Add new item (with image, price, discount, rack, floor)
+
+Edit item
+
+Delete item
+
+Icons for add ✚, edit ✎, delete 🗑️
+
+👥 CUSTOMERS ANALYTICS
+
+Manager can see:
+
+Total customers per day
+
+Regular customers list
+
+Clicking a customer shows:
+
+Items purchased
+
+Purchase history
+
+📦 SALES ANALYTICS
+
+Dashboard shows:
+
+Items sold today
+
+Item-wise sales count
+
+Most sold items (with images)
+
+Least sold items (with images)
+
+Floor-wise sales chart
+
+Rack-wise sales chart
+
+All charts use Recharts.
+
+🎨 UI REQUIREMENTS
+
+Clean grocery-store UI
+
+Icons everywhere
+
+Responsive design
+
+Card-based layout
+
+Proper spacing & alignment
+
+Smooth animations
+
+No clutter
+
+Real store feeling
+
+🔌 BACKEND APIs
+
+Provide APIs for:
+
+Items
+
+Floors
+
+Racks
+
+Customers
+
+Sales
+
+Analytics
+
+AI chatbot (SSE streaming)
+
+🎯 FINAL RESULT
+
+The app should behave like:
+
+A real smart grocery store
+
+Customers can find items easily
+
+AI feels helpful and intelligent
+
+Manager gets real business insights
+
+Images are correct
+
+No electronics
+
+Generate the full working project with this exact behavior.
