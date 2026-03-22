@@ -1,7 +1,5 @@
 # FreshMart-Retail-Industry
 
-# FreshMart - Smart Grocery Retail Store Application
-
 A full-stack smart retail grocery application that serves as a digital assistant for physical grocery stores. Built with modern web technologies to provide an intelligent shopping experience for customers and comprehensive analytics for store managers.
 
 ##  Features
